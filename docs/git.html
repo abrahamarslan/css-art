@@ -1,0 +1,63 @@
+<style type="text/css">
+    * {
+        box-sizing: border-box !important;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(135deg, #00ab67, #FF1EB475);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .git-box {
+        width: 150px;
+        height: 150px;
+        background-color: #ff3a52;
+        border-radius: 20px;
+        transform: rotate(45deg);
+    }
+    .bar {
+        width: 100px;
+        height: 15px;
+        background-color: white;
+        position: relative;
+    }
+    .bar:nth-child(1) {
+        top: 50px;
+        left: 0;
+    }
+    .bar:nth-child(2) {
+        width: 80px;
+        top: 60px;
+        left: 25px;
+        transform: rotate(45deg);
+    }
+    .circle {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        position: relative;
+    }
+    .one {
+        left: 30px;
+        top: 13px;
+    }
+    .two {
+        left: 75px;
+        top: -18px;
+    }
+    .three {
+        left: 75px;
+        top: 0;
+    }
+</style>
+<div class="git-box">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+    <div class="circle three"></div>
+</div>
