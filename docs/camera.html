@@ -1,0 +1,79 @@
+<style type="text/css">
+    * {
+        box-sizing: border-box !important;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(135deg, #e7b833, rgba(24, 215, 17, 0.18));
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .camera {
+        width: 205px;
+        height: 155px;
+        background-color: #D6D6D6;
+        border-radius: 15px;
+        box-shadow: 0 10px 15px -13px black;
+        position: relative;
+        display: flex;
+        justify-content: center; /*Horizontal*/
+        align-items: center; /* Vertical */
+    }
+    .lens {
+        width: 125px;
+        height: 125px;
+        background-color: #f5f5f5;
+        box-shadow: 0 8px 0 0 #C0C0C0;
+        display: flex;
+        justify-content: center; /*Horizontal*/
+        align-items: center; /* Vertical */
+        border-radius: 50%;
+    }
+    .inner-lens {
+        width: 105px;
+        height: 105px;
+        background-color: #00695c;
+        display: flex;
+        justify-content: center; /*Horizontal*/
+        align-items: center; /* Vertical */
+        border-radius: 50%;
+    }
+    .inner-lens-two {
+        border-top: 31px solid #008978 !important;
+        border-right: 31px solid #4DB6AC !important;
+        border-bottom: 31px solid #80CBC4 !important;
+        border-left: 31px solid #26A69A !important;
+        border-radius: 50%;
+    }
+    .flash {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        background-color: #f5f5f5;
+        right: 15px;
+        border-radius: 50%;
+        box-shadow: 0 5px 0px 0px #C0C0C0;
+    }
+    .button {
+        position: absolute;
+        width: 30px;
+        height: 5px;
+        background-color: #009587;
+        border-radius: 60px;
+        left: 15px;
+        top: -5px;
+    }
+</style>
+<div class="camera">
+    <div class="lens">
+        <div class="inner-lens">
+            <div class="inner-lens-two"></div>
+        </div>
+    </div>
+    <div class="flash"></div>
+    <div class="button"></div>
+</div>
