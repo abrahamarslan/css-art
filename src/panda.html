@@ -1,0 +1,129 @@
+<style type="text/css">
+    * {
+        box-sizing: border-box !important;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(135deg, #00ab67, #FF1EB475);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .panda {
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        border: 12px solid black;
+        border-radius: 50%;
+        position: relative;
+    }
+    .eye-left {
+        position: absolute;
+        width: 115px;
+        height: 58px;
+        background-color: black;
+        left: 10px;
+        top: 45%;
+        border-radius: 0 0 115px 115px;
+        transform: rotate(30deg);
+        overflow: hidden;
+    }
+    .left-ball {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        border: 12px solid white;
+        top: -50%;
+        left: 32%;
+        border-radius: 50%;
+    }
+
+    .eye-right {
+        position: absolute;
+        width: 115px;
+        height: 58px;
+        background-color: black;
+        right: 10px;
+        top: 45%;
+        border-radius: 0 0 115px 115px;
+        transform: rotate(-30deg);
+        overflow: hidden;
+    }
+    .right-ball {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        border: 12px solid white;
+        top: -50%;
+        right: 32%;
+        border-radius: 50%;
+    }
+
+    .nose {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: black;
+        border-radius: 50%;
+        top:60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mouth {
+        position: absolute;
+        width: 50px;
+        height: 10px;
+        background-color: black;
+        border-radius: 10px;
+        top:75%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .name {
+        font-family: Montserrat;
+        font-size: 1.5em;
+        font-weight: bold;
+        position: absolute;
+        bottom: 30%;
+        left: 47.4%;
+    }
+    .ear-left {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        background-color: black;
+        border-radius: 50%;
+        top: -30px;
+        left: -35px;
+        z-index: -1;
+    }
+    .ear-right {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        background-color: black;
+        border-radius: 50%;
+        top: -30px;
+        right: -35px;
+        z-index: -1;
+    }
+
+</style>
+<div class="panda">
+    <div class="eye-left">
+        <div class="left-ball"></div>
+    </div>
+    <div class="eye-right">
+        <div class="right-ball"></div>
+    </div>
+    <div class="nose"></div>
+    <div class="mouth"></div>
+    <div class="ear-left"></div>
+    <div class="ear-right"></div>
+</div>
+<div class="name">TOTU</div>
