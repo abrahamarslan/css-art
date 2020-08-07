@@ -1,0 +1,56 @@
+<style type="text/css">
+    * {
+        box-sizing: border-box !important;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        height: 200px;
+        width: 200px;
+        border-radius: 60px;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .square {
+        width: 140px;
+        height: 140px;
+        background-color: transparent;
+        border: 12px solid white;
+        border-radius: 45px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle-big {
+        height: 60px;
+        width: 60px;
+        background-color: transparent;
+        border: 12px solid white;
+        border-radius: 50%;
+    }
+    .circle-small {
+        height: 15px;
+        width: 15px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        right: 15px;
+        top: 15px
+    }
+</style>
+<div class="logo">
+    <div class="square">
+        <div class="circle-big">
+        </div>
+        <div class="circle-small"></div>
+    </div>
+</div>
