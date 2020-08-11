@@ -1,0 +1,50 @@
+<style type="text/css">
+    * {
+        box-sizing: border-box !important;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: backgroundAnimation 10s ease infinite;
+    }
+    .heading {
+        color: white;
+        position: absolute;
+        top: 140px;
+        font-family: Montserrat;
+        font-weight: lighter;
+    }
+    .subtext {
+        color: white;
+        text-align: center;
+    }
+    .subtext span {
+        color: darkred;
+    }
+    @keyframes backgroundAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 100%;
+        }
+    }
+
+</style>
+<body>
+<div class="heading">
+    <h1>CSS Animated Gradient Background</h1>
+    <div class="subtext">
+        Made with <span>&hearts;</span> by <a href="https://www.projos.org"></a> @Projos</div>.
+    </div>
+</div>
+</body>
