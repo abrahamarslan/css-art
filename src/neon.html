@@ -1,0 +1,37 @@
+<style type="text/css">
+    * {
+        box-sizing: border-box !important;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #111111;
+    }
+    .neon-effect {
+        overflow: hidden;
+        position: relative;
+        filter: contrast(110%) brightness(110%);
+    }
+    .neon {
+        position: relative;
+        background: #111111;
+        color: transparent;
+    }
+    .neon:before, .neon:after {
+        content: attr(data-text);
+        color: white;
+        filter: blur(0.2em);
+        position: absolute;
+        top: 0;
+
+    }
+</style>
+<div class="neon-effect">
+    <h1 class="neon" data-text="Neon" contenteditable="true"></h1>
+    <div class="gradient"></div>
+    <div class="spotlight"></div>
+</div>
